@@ -1,0 +1,44 @@
+html {
+  font-size: 16px; }
+
+body {
+  font-size: 16px; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+/* Font-imports */
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria.otf"); }
+
+@font-face {
+  font-family: "Geometria Bold";
+  src: url("../fonts/Geometria-Bold.otf"); }
+
+@font-face {
+  font-family: "Geometria Heavy";
+  src: url("../fonts/Geometria-Heavy.otf"); }
+
+@font-face {
+  font-family: "Geometria Bold Italic";
+  src: url("../fonts/Geometria-BoldItalic.otf"); }
+
+@font-face {
+  font-family: "Geometria Exta Black";
+  src: url("../fonts/Geometria-ExtaBlack.otf"); }
+
+@font-face {
+  font-family: "Geometria Italic";
+  src: url("../fonts/Geometria-Italic.otf"); }
+
+@font-face {
+  font-family: "Geometria Medium";
+  src: url("../fonts/Geometria-Medium.otf"); }
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/pt-sans.ttf"); }
+
+/* Font-variables */

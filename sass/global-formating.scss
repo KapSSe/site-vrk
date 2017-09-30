@@ -1,0 +1,274 @@
+@import "scaffolding";
+
+/* Variables */
+
+   $maintextCol : #BC815B; 
+
+/* Color head */
+
+$headColor: #f58466;
+
+
+
+/* Headings for each section */
+
+.main-heading{
+   &--lg{
+      font-size: 3rem;
+      line-height: 1.1;
+      font-family: $geometriaH;
+      text-transform: uppercase;
+      color: $headColor;
+   }
+   &--md{
+      text-transform: uppercase;
+      color: $headColor;
+      font-size: 1rem;
+      line-height: 1.5;
+   }
+}
+
+@media screen and (max-width: 680px) {
+    .main-heading--lg {
+        font-size: 2rem;
+    }
+}
+
+/* Paragraphs/subheadings for each section */
+
+.main-text {
+    font-family: $geometria;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000;
+
+    &--dotted {
+        border-style: dotted;
+        border-width: 7px;
+        font-size: 12px;
+        padding: 5px 0;
+        margin-bottom: 0;
+        border-color: $headColor;
+        text-align: center;
+    }
+
+    &--white {
+        color: #fff;
+    }
+
+    &--bold {
+        font-family: $geometriaB;
+    }
+
+    &--extraBold {
+        font-family: $geometriaEB;
+    }
+
+    &--medium {
+        font-family: $geometriaM;
+    }
+
+    &--colored {
+        color: $headColor;
+    }
+
+    &--underline {
+        text-decoration: underline;
+    }
+
+    &--uppercase {
+        text-transform: uppercase;
+    }
+
+    &--italic {
+        font-family: $geometriaI;
+    }
+}
+
+/* Graphicks template */
+
+/*
+	<graphik>
+		<title></title>
+		<graphik-box>
+			<img />
+		</graphik-box>
+	</graphik>
+*/
+
+.grafiks__box {
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto 2rem;
+
+    & img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .grafiks__box {
+        max-width: 100%;
+    }
+}
+
+/* Posters template */
+
+/*
+	<poster>
+
+	</poster>
+*/
+
+.poster {
+    height: 100vh;
+    width: 99.4vw;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background-attachment: fixed;
+}
+
+/* Lists for each section */
+
+.main-ul {
+    font-family: $geometria;
+    list-style: none;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0 0 2rem;
+
+    & li {
+        position: relative;
+        text-align: left;
+        margin: 1rem 0 0;
+
+        &:before {
+            color: $headColor;
+            position: absolute;
+            left: -2rem;
+            margin-right: 1.5rem;
+        }
+    }
+
+    &--bullet-black li:before {
+        content: "•";
+        color: #000000;
+    }
+
+    &--empty {
+        padding: 0;
+    }
+
+    &--empty:before {
+        content: "";
+    }
+
+    &--bullet li:before {
+        content: "•";
+    }
+
+    &--dash li:before {
+        content: "—";
+    }
+
+    &--fscrew li:before {
+        content: url('../img/sc2/fscrew.png'); //background-image??
+        width: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.main-ol {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    counter-reset: item;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1em;
+    line-height: 1.5em;
+
+    & li {
+        position: relative;
+        text-align: left;
+        margin: 1rem 0;
+
+        &--ordered {
+            position: relative;
+
+            &:before {
+                color: #BC815B;
+                content: counter(item) ". ";
+                counter-increment: item;
+                position: absolute;
+                left: -20px;
+            }
+        }
+    }
+}
+
+
+
+/* Reports for each section */
+
+
+
+.main-report {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+
+    &__side {
+        flex-basis: 20%;
+        margin-right: 1.875rem;
+        padding-left: 1.5rem;
+    }
+
+    &__num {
+        font-size: 2.25rem;
+        font-family: $geometriaH;
+        color: $headColor;
+
+        &--plus:before {
+            content: '+';
+            margin-left: -1.5rem;
+        }
+
+        &--minus:before {
+            content: "-";
+            margin-left: -1.5rem;
+        }
+    }
+
+    &__summary {
+        font-size: 0.75rem;
+        line-height: 1.5;
+        color: #000;
+    }
+
+    &__main p {
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    .main-report {
+        flex-direction: column;
+
+        &__side {
+	        flex-basis: 100%;
+	        text-align: center;
+	        margin-right: 0;
+	        margin-bottom: 2rem; 
+        }
+    }
+}

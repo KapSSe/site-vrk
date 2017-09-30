@@ -1,0 +1,106 @@
+@mixin line($margin_top,$margin_bottom,$height) {
+  margin: 0 auto;
+  display: block;
+  height: $height;
+  margin-top: $margin_top;
+  margin-bottom: $margin_bottom;
+  background: #C5C5C5;
+  box-sizing: border-box;
+}
+
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin container{
+  max-width: 910px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@mixin container-intersection{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 81.3%;
+  max-width: 1170px;
+  box-sizing: border-box;
+}
+
+@mixin btn {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@mixin respImg($w) {
+    max-width: $w;
+    height: auto;
+}
+
+@mixin h2 {
+    font-family: $geometriaH;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.08;
+    text-align: left;
+    color: #f6af94;
+}
+
+@mixin p {
+    font-family: $geometria;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+@mixin decorElemHexagon() {
+    position: relative;
+    padding-left: 30px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 17px;
+        height: 14px;
+        background-image: url(../img/content3/nut.png);
+    }
+}
+
+@mixin decorElemLine() {
+    position: relative;
+    padding-left: 30px;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top:12px;
+        width: 17px;
+        height: 1px;
+        background-color: #f6af94;
+  }
+}
+
+@mixin decorElemPoint() {
+    position: relative;
+    padding-left: 30px;
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      width: 17px;
+      height: 5px;
+      color: #f6af94;
+    }
+}

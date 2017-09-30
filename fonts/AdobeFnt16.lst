@@ -1,0 +1,292 @@
+%!Adobe-FontList 1.16
+%Locale:0x419
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ArialMT
+FamilyName:Arial
+StyleName:Regular
+FullName:Arial
+MenuName:Arial
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\CVG-art\ВРК-1\2017\БУКЛЕТ - Годовой отчёт\ДЛЯ ИНТЕРНЕТА\в печать\Папка БУКЛЕТ - Годовой отчёт за 2016 год - для ИНТЕРНЕТА\Document fonts\arial.ttf
+DataFormat:sfntData
+FileLength:778552
+FileModTime:1305066654
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arial
+NameArray:0,Win,1,Arial
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Arial-BoldMT
+FamilyName:Arial
+StyleName:Bold
+FullName:Arial Bold
+MenuName:Arial
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\CVG-art\ВРК-1\2017\БУКЛЕТ - Годовой отчёт\ДЛЯ ИНТЕРНЕТА\в печать\Папка БУКЛЕТ - Годовой отчёт за 2016 год - для ИНТЕРНЕТА\Document fonts\arialbd.ttf
+DataFormat:sfntData
+FileLength:749004
+FileModTime:1295224366
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arial Bold
+NameArray:0,Win,1,Arial
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Arial-ItalicMT
+FamilyName:Arial
+StyleName:Italic
+FullName:Arial Italic
+MenuName:Arial
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\CVG-art\ВРК-1\2017\БУКЛЕТ - Годовой отчёт\ДЛЯ ИНТЕРНЕТА\в печать\Папка БУКЛЕТ - Годовой отчёт за 2016 год - для ИНТЕРНЕТА\Document fonts\ariali.ttf
+DataFormat:sfntData
+FileLength:555884
+FileModTime:1295224366
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,4,Arial Italic
+NameArray:0,Win,1,Arial
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Baby95
+FamilyName:Baby95
+StyleName:Regular
+FullName:Baby95
+MenuName:Baby95
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\CVG-art\ВРК-1\2017\БУКЛЕТ - Годовой отчёт\ДЛЯ ИНТЕРНЕТА\в печать\Папка БУКЛЕТ - Годовой отчёт за 2016 год - для ИНТЕРНЕТА\Document fonts\BABY95.TTF
+DataFormat:sfntData
+FileLength:27380
+FileModTime:988316606
+WeightClass:400
+WidthClass:7
+AngleClass:0
+NameArray:0,Mac,4,Baby95
+NameArray:7,Win,1,Baby95
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ChartwellPies
+FamilyName:Chartwell Pies
+StyleName:Regular
+FullName:ChartwellPies
+MenuName:ChartwellPies
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\CVG-art\ВРК-1\2017\БУКЛЕТ - Годовой отчёт\ДЛЯ ИНТЕРНЕТА\в печать\Папка БУКЛЕТ - Годовой отчёт за 2016 год - для ИНТЕРНЕТА\Document fonts\ChartwellPies.ttf
+DataFormat:sfntData
+FileLength:681168
+FileModTime:1493212466
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,ChartwellPies
+NameArray:0,Win,1,ChartwellPies
+NameArray:0,Win,16,Chartwell Pies
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Geometria-Bold
+FamilyName:Geometria
+StyleName:Bold
+FullName:Geometria Bold
+MenuName:Geometria
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\CVG-art\ВРК-1\2017\БУКЛЕТ - Годовой отчёт\ДЛЯ ИНТЕРНЕТА\в печать\Папка БУКЛЕТ - Годовой отчёт за 2016 год - для ИНТЕРНЕТА\Document fonts\Geometria-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:166468
+FileModTime:1386719380
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Geometria Bold
+NameArray:0,Win,1,Geometria
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Geometria-BoldItalic
+FamilyName:Geometria
+StyleName:Bold Italic
+FullName:Geometria BoldItalic
+MenuName:Geometria
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:C:\CVG-art\ВРК-1\2017\БУКЛЕТ - Годовой отчёт\ДЛЯ ИНТЕРНЕТА\в печать\Папка БУКЛЕТ - Годовой отчёт за 2016 год - для ИНТЕРНЕТА\Document fonts\Geometria-BoldItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:167540
+FileModTime:1386719384
+WeightClass:700
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,4,Geometria BoldItalic
+NameArray:0,Win,1,Geometria
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Geometria-ExtraBold
+FamilyName:Geometria
+StyleName:ExtraBold
+FullName:Geometria ExtraBold
+MenuName:Geometria
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\CVG-art\ВРК-1\2017\БУКЛЕТ - Годовой отчёт\ДЛЯ ИНТЕРНЕТА\в печать\Папка БУКЛЕТ - Годовой отчёт за 2016 год - для ИНТЕРНЕТА\Document fonts\Geometria-ExtaBlack.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:166048
+FileModTime:1386719388
+WeightClass:800
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Geometria ExtraBold
+NameArray:0,Win,1,Geometria
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Geometria-Heavy
+FamilyName:Geometria
+StyleName:Heavy
+FullName:Geometria Heavy
+MenuName:Geometria
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\CVG-art\ВРК-1\2017\БУКЛЕТ - Годовой отчёт\ДЛЯ ИНТЕРНЕТА\в печать\Папка БУКЛЕТ - Годовой отчёт за 2016 год - для ИНТЕРНЕТА\Document fonts\Geometria-Heavy.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:165968
+FileModTime:1386719402
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Geometria Heavy
+NameArray:0,Win,1,Geometria
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Geometria-Italic
+FamilyName:Geometria
+StyleName:Italic
+FullName:Geometria Italic
+MenuName:Geometria
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\CVG-art\ВРК-1\2017\БУКЛЕТ - Годовой отчёт\ДЛЯ ИНТЕРНЕТА\в печать\Папка БУКЛЕТ - Годовой отчёт за 2016 год - для ИНТЕРНЕТА\Document fonts\Geometria-Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:169452
+FileModTime:1386719410
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,4,Geometria Italic
+NameArray:0,Win,1,Geometria
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Geometria-Medium
+FamilyName:Geometria
+StyleName:Medium
+FullName:Geometria Medium
+MenuName:Geometria
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\CVG-art\ВРК-1\2017\БУКЛЕТ - Годовой отчёт\ДЛЯ ИНТЕРНЕТА\в печать\Папка БУКЛЕТ - Годовой отчёт за 2016 год - для ИНТЕРНЕТА\Document fonts\Geometria-Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:166892
+FileModTime:1386719422
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Geometria Medium
+NameArray:0,Win,1,Geometria
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Geometria
+FamilyName:Geometria
+StyleName:Regular
+FullName:Geometria
+MenuName:Geometria
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\CVG-art\ВРК-1\2017\БУКЛЕТ - Годовой отчёт\ДЛЯ ИНТЕРНЕТА\в печать\Папка БУКЛЕТ - Годовой отчёт за 2016 год - для ИНТЕРНЕТА\Document fonts\Geometria.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:167732
+FileModTime:1386719376
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Geometria
+NameArray:0,Win,1,Geometria
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:PTSans-Regular
+FamilyName:PT Sans
+StyleName:Regular
+FullName:PT Sans
+MenuName:PT Sans
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\CVG-art\ВРК-1\2017\БУКЛЕТ - Годовой отчёт\ДЛЯ ИНТЕРНЕТА\в печать\Папка БУКЛЕТ - Годовой отчёт за 2016 год - для ИНТЕРНЕТА\Document fonts\pt-sans_[allfont.ru].ttf
+DataFormat:sfntData
+FileLength:345060
+FileModTime:1494547725
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,PT Sans
+NameArray:0,Mac,4,PT Sans
+NameArray:0,Win,1,PT Sans
+%EndFont
+
