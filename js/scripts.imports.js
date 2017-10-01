@@ -4,7 +4,6 @@ if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
        )
    }else{
       document.write( 
-         '<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>' +
          '<script src="js/TweenLite.min.js"></script>' +
          '<script src="js/TimelineLite.min.js"></script>' +
          '<script src="js/CSSPlugin.min.js"></script>' +

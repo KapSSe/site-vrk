@@ -447,10 +447,6 @@ body {
   flex-direction: column;
   max-width: 70%;
   text-align: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -470,8 +466,6 @@ body {
       .sc-welcome:before {
         display: none; } }
   .sc-welcome__main {
-    min-height: 1%;
-    max-width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -481,13 +475,11 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .sc-welcome__line {
-    height: 1%;
     height: 0.6vmax;
     background-color: #c5c5c5;
     width: 100%;
     margin: 2vmin 0; }
     .sc-welcome__line--bold {
-      height: 0.8em;
       height: 1vmax;
       margin: 0 0 0.5vmax;
       -webkit-transition: all 0.3s ease-in;
@@ -600,36 +592,36 @@ body {
     -ms-flex-align: center;
     align-items: center; }
   .sc-menu__menu {
-    margin-bottom: 1vmin;
-    font-size: 1.125rem;
-    line-height: 1.2; }
-    @media screen and (max-width: 870px) {
-      .sc-menu__menu {
-        font-size: 1rem; } }
-    @media screen and (max-width: 780px) {
-      .sc-menu__menu {
-        font-size: 0.8rem; } }
-    @media screen and (max-width: 620px) {
-      .sc-menu__menu {
-        font-size: 0.6rem; } }
-    @media screen and (max-width: 450px) {
-      .sc-menu__menu {
-        font-size: 0.6rem; } }
-    @media screen and (max-width: 375px) {
-      .sc-menu__menu {
-        font-size: 0.5rem; } }
+    margin-bottom: 1vmin; }
     .sc-menu__menu:hover a {
       color: #414141; }
     .sc-menu__menu:hover .sc-welcome__line {
       background-color: #f58466;
       width: 35% !important; }
   .sc-menu__link {
+    font-size: 1.125rem;
     font-family: "Geometria Bold";
     color: #000;
+    line-height: 1.2;
     text-decoration: none;
     -webkit-transition: color 0.3s ease-in;
     -o-transition: color 0.3s ease-in;
     transition: color 0.3s ease-in; }
+    @media screen and (max-width: 870px) {
+      .sc-menu__link {
+        font-size: 1rem; } }
+    @media screen and (max-width: 780px) {
+      .sc-menu__link {
+        font-size: 0.8rem; } }
+    @media screen and (max-width: 620px) {
+      .sc-menu__link {
+        font-size: 0.6rem; } }
+    @media screen and (max-width: 450px) {
+      .sc-menu__link {
+        font-size: 0.6rem; } }
+    @media screen and (max-width: 375px) {
+      .sc-menu__link {
+        font-size: 0.5rem; } }
   .sc-menu .flex {
     margin: 2vmin 0; }
     .sc-menu .flex__number {
@@ -736,8 +728,6 @@ body {
   -ms-flex-pack: center;
   justify-content: center; }
   .sc-vagon__train {
-    min-height: 1%;
-    max-width: 100%;
     position: relative;
     margin: 0 auto; }
     .sc-vagon__train--wireframe {
@@ -751,16 +741,13 @@ body {
       max-width: 50%;
       height: auto; }
   .sc-vagon__rails {
-    min-height: 1%;
     width: 100vw; }
   .sc-vagon__schema {
-    min-height: 1%;
     max-width: 40%;
     height: auto;
     margin: 2% auto 0; }
 
 .sc-vagon--1 .sc-vagon__crans {
-  min-height: 1%;
   position: relative;
   margin: 0 auto;
   max-width: 85%; }
@@ -2195,7 +2182,7 @@ body {
   border: 1px solid #f58466;
   border-right: none;
   border-bottom: none;
-  padding: 1.25rem 1.25rem; }
+  padding: 1rem 1.25rem; }
 
 @media screen and (max-width: 680px) {
   .sc-3__table td {
@@ -2246,13 +2233,10 @@ body {
   text-align: center; }
 
 .sc-3__table .td--reverse {
-  -webkit-writing-mode: vertical-rl;
+  -webkit-writing-mode: tb-rl;
   -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  background-color: #f8aa8f;
-  min-block-size: -webkit-fill-available;
-  min-block-size: -moz-available;
-  min-block-size: fill-available; }
+  writing-mode: tb-rl;
+  background-color: #f8aa8f; }
 
 .sc-3__table .td--filled {
   background-color: #f58365; }

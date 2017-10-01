@@ -135,7 +135,6 @@ body {
     flex-direction: column;
     max-width: 70%;
     text-align: center;
-    align-items: center;
     justify-content: center;
     position: relative;
 
@@ -154,21 +153,17 @@ body {
     }
 
     &__main {
-        min-height: 1%;
-        max-width: 100%;
         display: flex;
         justify-content: space-between;
     }
 
     &__line {
-        height: 1%;
         height: 0.6vmax;
         background-color: #c5c5c5;
         width: 100%;
         margin: 2vmin 0;
 
         &--bold {
-            height: 0.8em;
             height: 1vmax;
             margin: 0 0 0.5vmax;
             transition: all 0.3s ease-in;
@@ -286,8 +281,24 @@ body {
 
     &__menu {
         margin-bottom: 1vmin;
+
+        &:hover a {
+            color: #414141;
+        }
+
+        &:hover .sc-welcome__line {
+            background-color: $headColor;
+            width: 35% !important;
+        }
+    }
+
+    &__link {
         font-size: 1.125rem;
+        font-family: $geometriaB;
+        color: #000;
         line-height: 1.2;
+        text-decoration: none;
+        transition: color 0.3s ease-in;
 
         @media screen and (max-width: 870px) {
             font-size: 1rem;
@@ -308,22 +319,6 @@ body {
         @media screen and (max-width: 375px) {
             font-size: 0.5rem;
         }
-
-        &:hover a {
-            color: #414141;
-        }
-
-        &:hover .sc-welcome__line {
-            background-color: $headColor;
-            width: 35% !important;
-        }
-    }
-
-    &__link {
-        font-family: $geometriaB;
-        color: #000;
-        text-decoration: none;
-        transition: color 0.3s ease-in;
     }
 
     .flex {
@@ -411,8 +406,6 @@ body {
     justify-content: center;
 
     &__train {
-        min-height: 1%;
-        max-width: 100%;
         position: relative;
         margin: 0 auto;
 
@@ -432,12 +425,10 @@ body {
     }
 
     &__rails {
-        min-height: 1%;
         width: 100vw;
     }
 
     &__schema {
-        min-height: 1%;
         @include respImg(40%);
         margin: 2% auto 0;
     }
@@ -445,7 +436,6 @@ body {
 
 .sc-vagon--1 {
     & .sc-vagon__crans {
-        min-height: 1%;
         position: relative;
         margin: 0 auto;
         max-width: 85%;
@@ -464,6 +454,7 @@ body {
     }
 
     & .sc-vagon__train {
+
         max-width: 80%;
 
         &--number {
@@ -2255,7 +2246,7 @@ body {
     border: 1px solid #f58466;
     border-right: none;
     border-bottom: none;
-    padding: 1.25rem 1.25rem;
+    padding: 1rem 1.25rem;
 }
 
 @media screen and (max-width: 680px) {
@@ -2302,9 +2293,8 @@ body {
 }
 
 .sc-3__table .td--reverse {
-    writing-mode: vertical-rl;
+    writing-mode: tb-rl;
     background-color: #f8aa8f;
-    min-block-size: fill-available;
 }
 
 .sc-3__table .td--filled {
