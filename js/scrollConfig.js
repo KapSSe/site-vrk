@@ -126,6 +126,12 @@ $(document).ready(function () {
         }
     });
     
+    $(document).on('click', '.menulink', function(e){
+        console.log('hello')
+        e.preventDefault();
+        return false;
+    });
+
     $(document).on('click', '.sc-menu__link', function(e){
         var el = e.target;
             return navigations.init(el);
