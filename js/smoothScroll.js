@@ -35,4 +35,10 @@ $('a[href*="#"]')
     }
   }
 });
+
+$('.sc-header__menu-btn').on('click', function(){
+         $('html, body').animate({
+            scrollTop: $("#mainMenu").offset().top
+      }, 2000);
+   })
 });
