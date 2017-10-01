@@ -1,6 +1,6 @@
 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
    document.write( 
-         '<script src="js/TweenLite.min.js"></script>'
+         '<script src="smoothScroll.js"></script>'
        )
    }else{
       document.write( 
