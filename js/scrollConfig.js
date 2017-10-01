@@ -1,10 +1,12 @@
 $(document).ready(function () {
 
+
 	$('#fullpage').fullpage({
 		//Navigation
 		menu: '#menu',
 		lockAnchors: false,
-		anchors: ['mainPage', 'menuPage', 'firstTrain', 'firstContent', 'secondTrain', 'secondContent', 'thirdTrain', 'thirdContent', 'forthTrain', 'forthContent', 'fifthTrain', 'fifthContent', 'sixthTrain', 'sixthContent', 'seventhTrain', 'seventhTrain'],
+		anchors: ['mainPage', 'menuPage', 'firstTrain', 'firstContent', 'secondTrain', 'secondContent', 'thirdTrain', 'thirdContent', 'forthTrain', 'forthContent', 'fifthTrain', 'fifthContent', 'sixthTrain', 'sixthContent', 'seventhTrain', 'seventhContent'],
+        disableAutoTransitionSections: ['ssss'],
         navigation: false,
         navigationPosition: 'right',
         navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -84,12 +86,20 @@ $(document).ready(function () {
         },
 
         afterLoad: function (anchorLink, index) {
+            console.log(anchorLink);
 			if(animations.allowAnim){
 				animations.isAnimEnded = false;
-				var flag = document.querySelectorAll('.section');
+                var flag = document.querySelectorAll('.section');
+                    Array.prototype.contains = function (anchorLink) {
+                        for (i in this) {
+                        if (animations.disableAutoTransitionSections[i] == anchorLink) return true;
+                        }
+                        return false;
+                    }
+                    animations.disableAutoTransitionSections.contains(anchorLink)?animations.isScrollable = true:animations.isScrollable = false;
 				if (index > 1) {
 					$.fn.fullpage.setAllowScrolling(false, 'all')
-					animations.callTweenOnEnter(index);
+                    animations.callTweenOnEnter(index);
                 };
                 if(index === 1){
                     $.fn.fullpage.setAllowScrolling(true, 'all')

@@ -33,6 +33,10 @@ body {
     text-align: center;
 }
 
+.tabcont{
+    overflow-x: auto;
+}
+
 /* Preloader */
 
 .preloader {
@@ -84,20 +88,22 @@ body {
     top: 0;
     left: 0;
     width: 99%;
-    max-height: 90px;
+    padding: 15px 20px;
     box-sizing: border-box;
-    padding: 2vw;
     background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .tomainpage {
+        max-width: 20%;
+    }
 
     &__logo {
-        width: 15%;
+        max-width: 100%;
     }
 
     &__menu-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 3vw;
         height: 1rem;
         padding-left: 40px;
         font-size: 1.125rem;
@@ -129,6 +135,7 @@ body {
     flex-direction: column;
     max-width: 70%;
     text-align: center;
+    align-items: center;
     justify-content: center;
     position: relative;
 
@@ -140,20 +147,28 @@ body {
         content: '';
         border: 7vmax solid transparent;
         border-left: 7vmax solid #ef8161;
+
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
     }
 
     &__main {
+        min-height: 1%;
+        max-width: 100%;
         display: flex;
         justify-content: space-between;
     }
 
     &__line {
+        height: 1%;
         height: 0.6vmax;
         background-color: #c5c5c5;
         width: 100%;
         margin: 2vmin 0;
 
         &--bold {
+            height: 0.8em;
             height: 1vmax;
             margin: 0 0 0.5vmax;
             transition: all 0.3s ease-in;
@@ -243,6 +258,10 @@ body {
             white-space: nowrap;
             content: "Скачать в PDF";
             transition: all .3s ease-in;
+
+            @media screen and (max-width: 360px) {
+                display: none;
+            }
         }
     }
 }
@@ -262,10 +281,33 @@ body {
     &__flex {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__menu {
         margin-bottom: 1vmin;
+        font-size: 1.125rem;
+        line-height: 1.2;
+
+        @media screen and (max-width: 870px) {
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: 780px) {
+            font-size: 0.8rem;
+        }
+
+        @media screen and (max-width: 620px) {
+            font-size: 0.6rem;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 0.6rem;
+        }
+
+        @media screen and (max-width: 375px) {
+            font-size: 0.5rem;
+        }
 
         &:hover a {
             color: #414141;
@@ -278,10 +320,8 @@ body {
     }
 
     &__link {
-        font-size: 1.25vmax;
         font-family: $geometriaB;
         color: #000;
-        line-height: 1.2;
         text-decoration: none;
         transition: color 0.3s ease-in;
     }
@@ -291,16 +331,23 @@ body {
 
         &__number {
             width: 100%;
+            height: 100%;
             margin: 0 auto;
         }
 
         &__left {
             width: 53%;
             display: flex;
+            overflow: hidden;
+            align-items: center;
+            align-self: center;
             list-style: none;
             padding: 0;
             margin: 0;
-            justify-content: flex-start;
+
+            @media screen and (max-width: 620px) {
+                width: 40%;
+            }
 
             .sc-menu__menu {
                 width: 34%;
@@ -321,21 +368,27 @@ body {
             margin: 0;
 
             .sc-menu__menu {
-                width: 18%;
+                width: 19%;
                 text-align: left;
-                margin-left: 6%;
+                margin-left: 7%;
+
+                @media screen and (max-width: 620px) {
+                    width: 24%;
+                    margin-left: 9%;
+                }
             }
         }
 
         &__right {
             width: 42%;
             display: flex;
+            flex-grow: 1;
             flex-flow: row wrap;
             justify-content: space-between;
             align-items: flex-start;
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin: 0 0 0 1rem;
 
             .sc-menu__menu {
                 width: 42%;
@@ -352,11 +405,14 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-width: 70%;
     text-align: center;
     justify-content: center;
 
     &__train {
+        min-height: 1%;
+        max-width: 100%;
         position: relative;
         margin: 0 auto;
 
@@ -376,11 +432,12 @@ body {
     }
 
     &__rails {
+        min-height: 1%;
         width: 100vw;
-        margin-left: -22%;
     }
 
     &__schema {
+        min-height: 1%;
         @include respImg(40%);
         margin: 2% auto 0;
     }
@@ -388,6 +445,7 @@ body {
 
 .sc-vagon--1 {
     & .sc-vagon__crans {
+        min-height: 1%;
         position: relative;
         margin: 0 auto;
         max-width: 85%;
@@ -406,7 +464,6 @@ body {
     }
 
     & .sc-vagon__train {
-
         max-width: 80%;
 
         &--number {
@@ -1849,10 +1906,7 @@ body {
       border-bottom: 1px solid #BC815B;
       }
     }
-    &__listheading {
-      margin-top: 50px;
-      margin-bottom: 0;
-    }
+    
   }
 
 .sc2investvaste{
@@ -1954,6 +2008,7 @@ body {
   &__numblock{
     margin: 0 auto;
     box-sizing: border-box;
+    width: 50%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -2170,7 +2225,7 @@ body {
 
     & .container {
         max-width: 910px;
-        margin: 3vw auto;
+        margin: 7% auto;
         padding: 0 10px;
     }
 }
@@ -2189,13 +2244,18 @@ body {
     font-family: "PTSans sans-serif";
     border-collapse: collapse;
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 580px) {
+        overflow-x: scroll;
+        display: block;
+    }
 }
 
 .sc-3__table td {
     border: 1px solid #f58466;
     border-right: none;
     border-bottom: none;
-    padding: 1rem 1.25rem;
+    padding: 1.25rem 1.25rem;
 }
 
 @media screen and (max-width: 680px) {
@@ -2242,8 +2302,9 @@ body {
 }
 
 .sc-3__table .td--reverse {
-    writing-mode: tb-rl;
+    writing-mode: vertical-rl;
     background-color: #f8aa8f;
+    min-block-size: fill-available;
 }
 
 .sc-3__table .td--filled {
@@ -2336,6 +2397,9 @@ body {
     margin-top:100px;
     font-family: $geometria;
     border-collapse: collapse;
+    &--mgbot{
+        margin-bottom: 2rem;
+    }
     & td{
       border-bottom: 1px solid #BC815B;
       &:nth-child(even){
@@ -2484,8 +2548,147 @@ body {
 /* Media */
 
 
-  /* Fist screen */
+@media (max-width: 1199px) { 
 
-  /* Second screen */
+}
 
-  /* Third screen */
+@media (max-width: 991px) {
+    .sc2risccontroll__numrow{
+        flex-direction: column;
+    }
+    
+    .sc2risccontroll__numblock{
+        width: 100%;
+    }
+
+    .main-report__num{
+        text-align: center;
+    }
+
+    .grafiks__box{
+        & img{
+            display: block;
+            
+        }
+    }
+
+    .radial__item{
+        flex-direction: column;
+        & ul{
+            width: 100%;
+        }
+        & ol {
+            padding-left: 15px;
+            width: 100%;
+        }
+    }
+    .appendix__photocont img{
+        display: block;
+        width: 100%;
+    }
+
+    .appendix__aud{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+    
+    /* Global styles*/
+
+    .main-heading{
+        &--lg{
+           font-size: 1.5rem;
+           line-height: 1.1;
+           text-align: center;
+        }
+        &--md{
+        
+           font-size: 1.25rem;
+           line-height: 1.5;
+        }
+     }
+
+     .main-text {
+        font-family: $geometria;
+        margin-bottom: 1.25rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #000;
+    
+        &--dotted {
+            border-width: 7px;
+            font-size: 12px;
+            padding: 5px 0;
+            margin-bottom: 0;
+            border-color: $headColor;
+            text-align: center;
+        }
+    }
+
+
+
+    .main-ul {
+        font-family: $geometria;
+        list-style: none;
+        font-size: 1em;
+        line-height: 1.5em;
+        margin: 0 0 0.5rem;
+    
+        & li {
+            position: relative;
+            text-align: left;
+            margin: 0.5rem 0 0;
+    
+            &:before {
+                color: $headColor;
+                position: absolute;
+                left: -2rem;
+                margin-right: 1.5rem;
+            }
+        }
+    
+        &--bullet-black li:before {
+            content: "•";
+            color: #000000;
+        }
+    
+    
+        &--fscrew li:before {
+            content: url('../img/sc2/fscrew.png'); //background-image??
+            width: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+     /* Partiular section styles */
+
+     .sc2risccontroll__table--td{
+         padding: 10px 5px;
+     }
+
+     .sc2sops__table--td{
+        text-align: center;
+        padding: 5px;
+     }
+
+     .sc2risccontroll__table--capture{
+        flex-direction: column;
+        justify-content: space-between;
+     }
+
+     .sc2clientpolitics__vareks{
+         padding-left: 30px;
+            &:before{
+                display: none;
+            }
+        }
+}
+
+

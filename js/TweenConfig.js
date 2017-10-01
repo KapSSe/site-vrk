@@ -86,7 +86,7 @@
     //ENTRY ANIMATIONS
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
     tweenMainPageEntry : function () {
-        var firstScreenTimeline = new TimelineLite({onComplete: function(){$.fn.fullpage.setAllowScrolling(true, 'all'); if(navigations.toggleOn){animations.setAllowTransition()}}});
+        var firstScreenTimeline = new TimelineLite({onComplete: function(){$.fn.fullpage.setAllowScrolling(true, 'all');if(!(animations.isScrollable)){animations.moveTo()} ; if(navigations.toggleOn){animations.setAllowTransition()}}});
             firstScreenTimeline.from(animations.domElements.scWelcomeLineSm, 0.35, { x: -500 })
             firstScreenTimeline.from(animations.domElements.scWelcomeW1, 0.5, {x:-500})
             firstScreenTimeline.from(animations.domElements.scWelcomeW2, 0.5, {x:-500}, '-=0.15')
@@ -98,7 +98,7 @@
     },
 
     tweenSecondPageEntry : function () {
-        var secondScreenTimeline = new TimelineLite({ onComplete: function () { $.fn.fullpage.setAllowScrolling(true, 'all'); if (navigations.toggleOn) { animations.setAllowTransition() } } });
+        var secondScreenTimeline = new TimelineLite({ onComplete: function () { $.fn.fullpage.setAllowScrolling(true, 'all');if(!(animations.isScrollable)){animations.moveTo()} ; if (navigations.toggleOn) { animations.setAllowTransition() } } });
         secondScreenTimeline.to(animations.domElements.scMenuYear, 0, { opacity: 1 }).to(animations.domElements.scFooter, 0.2, { opacity: 1 });
         secondScreenTimeline.to(animations.domElements.scMenuLinks1, 0, { opacity: 1 });
         
@@ -119,7 +119,7 @@
 
 
     tweenThirdPageEntry: function () {
-        var secondScreenTimeline = new TimelineLite({ onComplete: function () { $.fn.fullpage.setAllowScrolling(true, 'all'); if(navigations.toggleOn){animations.setAllowTransition()} } });
+        var secondScreenTimeline = new TimelineLite({ onComplete: function () { $.fn.fullpage.setAllowScrolling(true, 'all');if(!(animations.isScrollable)){animations.moveTo()} ; if(navigations.toggleOn){animations.setAllowTransition()} } });
             secondScreenTimeline.to(animations.domElements.scVagon1, 0, { opacity: 1 });
             secondScreenTimeline.from(animations.domElements.scVagon1Rails, 0.5, { x: -500, opacity: 0 }).to(animations.domElements.scFooter, 0.2, { opacity: 1 });
             secondScreenTimeline.from(animations.domElements.scVagon1Wire, 1.5, { x: -500, opacity: 0 });
@@ -132,7 +132,7 @@
 
       
     tweenForthPageEntry : function(){
-        var forthScreenTimeline = new TimelineLite({ onComplete: function () { $.fn.fullpage.setAllowScrolling(true, 'all'); if(navigations.toggleOn){animations.setAllowTransition()} } });
+        var forthScreenTimeline = new TimelineLite({ onComplete: function () { $.fn.fullpage.setAllowScrolling(true, 'all');if(!(animations.isScrollable)){animations.moveTo()} ; if(navigations.toggleOn){animations.setAllowTransition()} } });
         forthScreenTimeline.to(animations.domElements.scVagon2, 0, { opacity: 1 });
         forthScreenTimeline.from(animations.domElements.scVagon2Depot, 1.5, { x: -400, opacity: 0 }).to(animations.domElements.scFooter, 0.2, { opacity: 1 });
         forthScreenTimeline.fromTo(animations.domElements.scVagon2Wire, 2, { x: 1000, opacity: 0 }, { x: -450, opacity: 1 }, '-=1.2');
@@ -141,7 +141,7 @@
     },
 
     tweenFifthPageEntry : function (){
-        var fifthScreenTimeline = new TimelineLite({ onComplete: function () { $.fn.fullpage.setAllowScrolling(true, 'all'); if(navigations.toggleOn){animations.setAllowTransition()} } });
+        var fifthScreenTimeline = new TimelineLite({ onComplete: function () { $.fn.fullpage.setAllowScrolling(true, 'all');if(!(animations.isScrollable)){animations.moveTo()} ; if(navigations.toggleOn){animations.setAllowTransition()} } });
         fifthScreenTimeline.to(animations.domElements.scVagon3, 0, { opacity: 1 });
         fifthScreenTimeline.from(animations.domElements.scVagon3Cran, 1, { x: -400, opacity: 0 }).to(animations.domElements.scFooter, 0.2, { opacity: 1 });
         fifthScreenTimeline.from(animations.domElements.scVagon3Wire, 1, { x: -500, opacity: 0 });
@@ -149,7 +149,7 @@
     },
 
     tweenSixthPageEntry : function (){
-        var sixthScreenTimeline = new TimelineLite({onComplete: function(){$.fn.fullpage.setAllowScrolling(true, 'all'); if(navigations.toggleOn){animations.setAllowTransition()}}});
+        var sixthScreenTimeline = new TimelineLite({onComplete: function(){$.fn.fullpage.setAllowScrolling(true, 'all');if(!(animations.isScrollable)){animations.moveTo()} ; if(navigations.toggleOn){animations.setAllowTransition()}}});
         sixthScreenTimeline.to(animations.domElements.scVagon4, 0, { opacity: 1 });
         sixthScreenTimeline.from(animations.domElements.scVagon4Wire, 1.5, { x: -400, opacity: 0 }).to(animations.domElements.scFooter, 0.2, { opacity: 1 });
         sixthScreenTimeline.from(animations.domElements.scVagon4Color, 1.5, { scale: 1.2, opacity: 0 });
@@ -157,7 +157,7 @@
     },
 
     tweenSeventhPageEntry: function () {
-        var seventhScreenTimeline = new TimelineLite({onComplete: function(){$.fn.fullpage.setAllowScrolling(true, 'all'); if(navigations.toggleOn){animations.setAllowTransition()}}});
+        var seventhScreenTimeline = new TimelineLite({onComplete: function(){$.fn.fullpage.setAllowScrolling(true, 'all');if(!(animations.isScrollable)){animations.moveTo()} ; if(navigations.toggleOn){animations.setAllowTransition()}}});
         seventhScreenTimeline.to(animations.domElements.scVagon5, 0, { opacity: 1 });
         seventhScreenTimeline.from(animations.domElements.scVagon5Wire, 1.5, { x: -400, opacity: 0 }).to(animations.domElements.scFooter, 0.2, { opacity: 1 });
             seventhScreenTimeline.from(animations.domElements.scVagon5Color, 1.5, {scale: 1.2, opacity: 0});
@@ -168,7 +168,7 @@
     },
 
     tweenEightPageEntry: function () {
-        var nineScreenTimeLine = new TimelineLite({onComplete: function(){$.fn.fullpage.setAllowScrolling(true, 'all'); if(navigations.toggleOn){animations.setAllowTransition()}}});
+        var nineScreenTimeLine = new TimelineLite({onComplete: function(){$.fn.fullpage.setAllowScrolling(true, 'all');if(!(animations.isScrollable)){animations.moveTo()} ; if(navigations.toggleOn){animations.setAllowTransition()}}});
             nineScreenTimeLine.to(animations.domElements.scVagon6, 0, { opacity: 1 });
             nineScreenTimeLine.from(animations.domElements.scVagon6Rails, 1, { x: -500, opacity: 0 }).to(animations.domElements.scFooter, 0.2, { opacity: 1 });
             nineScreenTimeLine.from(animations.domElements.scVagon6Wire, 1.5, {x: -400, opacity: 0});
@@ -177,7 +177,7 @@
     },
 
     tweenNinePageEntry: function () {
-        var nineScreenTimeLine = new TimelineLite({onComplete: function(){$.fn.fullpage.setAllowScrolling(true, 'all'); if(navigations.toggleOn){animations.setAllowTransition()}}});
+        var nineScreenTimeLine = new TimelineLite({onComplete: function(){$.fn.fullpage.setAllowScrolling(true, 'all');if(!(animations.isScrollable)){animations.moveTo()} ; if(navigations.toggleOn){animations.setAllowTransition()}}});
             nineScreenTimeLine.to(animations.domElements.scVagon7, 0, { opacity: 1 });
             nineScreenTimeLine.from(animations.domElements.scVagon7Rails, 1, { x: -500, opacity: 0 }).to(animations.domElements.scFooter, 0.2, { opacity: 1 });
             nineScreenTimeLine.from(animations.domElements.scVagon7Wire, 1.5, {x: -400, opacity: 0});
@@ -186,7 +186,7 @@
     },
 
     tweenContentEntry: function () {
-        var contentTimeLine = new TimelineLite({ onComplete: function () { $.fn.fullpage.setAllowScrolling(true, 'all'); if(navigations.toggleOn){animations.setAllowTransition()} } });
+        var contentTimeLine = new TimelineLite({ onComplete: function () { $.fn.fullpage.setAllowScrolling(true, 'all');if(!(animations.isScrollable)){animations.moveTo()} ; if(navigations.toggleOn){animations.setAllowTransition()} } });
         contentTimeLine.to(animations.domElements.scFooter, 0.2, { opacity: 0 }).from(animations.domElements.scContent, 1, { opacity: 0 });
     },
 
@@ -249,13 +249,15 @@
         var contentOut = new TimelineLite({ onComplete: function () { animations.isAnimEnded = true; animations.moveTo() } });
     },
     
+    
+    // TO SET AUTOSCROLL WHEN NOT SCROLLABLE SECTIONS ANIMATIONS
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+    disableAutoTransitionSections: ['mainPage','menuPage','firstContent','secondContent','thirdContent','forthContent','fifthContent','sixthContent','seventhContent'],
 
-
-
+    
     //TWEEN CALL FROM SCROLL CONFIG
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
     callTweenOnEnter: function (index) {
-        console.log(index)
         return new enterAnimations[index];
     },
 
@@ -266,15 +268,15 @@
     },
 
     moveTo: function () {
-        this.direction === "up" ? $.fn.fullpage.moveSectionUp() : $.fn.fullpage.moveSectionDown();
+        animations.direction === "up" ? $.fn.fullpage.moveSectionUp() : $.fn.fullpage.moveSectionDown();
     },
 
     allowAnim : true,
 
     setAllowTransition: function () {
         return navigations.goToContent();
-    }
-   
+    },
+
 }
 
 
