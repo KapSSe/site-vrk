@@ -1,6 +1,6 @@
 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
    document.write( 
-         '<script src="smoothScroll.js"></script>'
+         '<script src="js/smoothScroll.js"></script>'
        )
    }else{
       document.write( 
@@ -10,7 +10,7 @@ if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
          '<script src="js/TweenConfig.js"></script>' +
          '<script src="js/jquery.fullpage.extensions.min.js"></script>' +
          '<script src="js/scrolloverflow.js"></script>' +
-         '<script src="js/jquery.fullPage.js"></script>' +
+         '<script src="js/jquery.fullPage.min.js"></script>' +
          '<script src="js/scrollConfig.js"></script>' +
          '<script src="js/menuConfig.js"></script>'
      )

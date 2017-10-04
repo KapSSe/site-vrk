@@ -113,6 +113,9 @@ $(document).ready(function () {
             $.fn.fullpage.setAllowScrolling(false, 'all')
             animations.tweenMainPageEntry();
         },
+
+       
+
 	});
 	
 	$(document).on('click', '.sc-header__menu-btn', function(){
@@ -127,7 +130,6 @@ $(document).ready(function () {
     });
     
     $(document).on('click', '.menulink', function(e){
-        console.log('hello')
         e.preventDefault();
         return false;
     });
