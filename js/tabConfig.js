@@ -21,7 +21,7 @@ window.onload = function(){
       writeTab : function (currentUrl, domTab, domBtn) {
          if(currentUrl != 'mainPage' || currentUrl === undefined){
             domTab.classList.remove('tabindicator--hide');
-            domTab.innerHTML = lib.sectionsTab[lib.sectionsLib.indexOf(currentUrl)]
+            domTab.innerHTML = lib.sectionsTab[lib.sectionsLib.indexOf(currentUrl) - 1];
          }
          domBtn.classList.remove('sc-header__menu-btn--inactive')
       },
