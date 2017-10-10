@@ -12,6 +12,7 @@ if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
          '<script src="js/scrolloverflow.js"></script>' +
          '<script src="js/jquery.fullPage.min.js"></script>' +
          '<script src="js/scrollConfig.js"></script>' +
-         '<script src="js/menuConfig.js"></script>'
+         '<script src="js/menuConfig.js"></script>'+
+         '<script src="js/tabConfig.js"></script>'
      )
    }

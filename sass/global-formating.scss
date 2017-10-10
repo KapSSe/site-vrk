@@ -2,30 +2,30 @@
 
 /* Variables */
 
-   $maintextCol : #BC815B; 
+$maintextCol: #BC815B;
 
 /* Color head */
 
 $headColor: #f58466;
 
 
-
 /* Headings for each section */
 
-.main-heading{
-   &--lg{
-      font-size: 3rem;
-      line-height: 1.1;
-      font-family: $geometriaH;
-      text-transform: uppercase;
-      color: $headColor;
-   }
-   &--md{
-      text-transform: uppercase;
-      color: $headColor;
-      font-size: 1rem;
-      line-height: 1.5;
-   }
+.main-heading {
+    &--lg {
+        font-size: 3rem;
+        line-height: 1.1;
+        font-family: $geometriaH;
+        text-transform: uppercase;
+        color: $headColor;
+    }
+
+    &--md {
+        text-transform: uppercase;
+        color: $headColor;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
 }
 
 @media screen and (max-width: 680px) {
@@ -51,6 +51,11 @@ $headColor: #f58466;
         margin-bottom: 0;
         border-color: $headColor;
         text-align: center;
+        display: inline-block;
+
+        @media screen and (max-width: 680px) {
+            display: none !important;
+        }
     }
 
     &--white {
@@ -97,16 +102,158 @@ $headColor: #f58466;
 	</graphik>
 */
 
-.grafiks__box {
-    text-align: center;
-    max-width: 70%;
+.grafiks {
     margin: 0 auto 2rem;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        &--double {
+            div {
+                width: 45%;
+            }
+        }
+    }
 
     & img {
         max-width: 100%;
         height: auto;
     }
+
+    &__legend {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        & li {
+            padding-left: 50%;
+            text-align: left;
+        }
+
+        &--around {
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            & li {
+                padding-left: 0;
+            }
+        }
+
+        &--left {
+            justify-content: flex-start;
+
+            & li {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    &__box {
+        text-align: center;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+
+        div {
+            margin: 0 auto;
+        }
+
+        &--line {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+            & li {
+                padding-left: 10%;
+            }
+        }
+
+        &--center {
+            margin: 0 auto;
+        }
+    }
 }
+
+.legend {
+    margin: 1rem 0;
+
+    &__item {
+        text-align: left;
+        position: relative;
+        color: #000;
+        font-size: 0.875rem;
+        line-height: 1.3;
+
+        &:before {
+            position: absolute;
+            display: block;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            left: -1rem;
+            width: 8px;
+            height: 8px;
+            background-color: #000;
+        }
+
+        &--blue:before {
+            background-color: #1375BC;
+        }
+
+        &--gray:before {
+            background-color: #BABEC1;
+        }
+
+        &--red:before {
+            background-color: #ED1F23;
+        }
+
+        &--beige:before {
+            background-color: #F7AA8E;
+        }
+
+        &--brown:before {
+            background-color: #B98079;
+        }
+
+        &--darkBrown:before {
+            background-color: #A75F5B;
+        }
+
+        &--darkGray:before {
+            background-color: #6E6E71;
+        }
+
+        &--orange:before {
+            background-color: $headColor;
+        }
+
+        &--rose:before {
+            background-color: #F59892;
+        }
+
+        &--purple:before {
+            background-color: #C91D66;
+        }
+
+        &--browny:before {
+            background-color: #913A3B;
+        }
+
+        &--redDot:before {
+            background-color: #ED1F23;
+            border-radius: 50%;
+        }
+    }
+}
+
+
 
 @media screen and (max-width: 680px) {
     .grafiks__box {
@@ -125,7 +272,7 @@ $headColor: #f58466;
 .poster {
     height: 100vh;
     width: 99.4%;
-    text-align: center;
+    //text-align: center;
     margin-bottom: 2rem;
     background-position: center center;
     background-repeat: no-repeat;
@@ -230,13 +377,24 @@ $headColor: #f58466;
     &__side {
         width: 20%;
         margin-right: 1.875rem;
-        padding-left: 1.5rem;
+        //padding-left: 1.5rem;
+        text-align: left;
+
+        &--right {
+            margin-left: 1.875rem;
+            margin-right: 0;
+        }
+
+        &--grey {
+            flex-basis: 15%;
+        }
     }
 
     &__num {
         font-size: 2.25rem;
         font-family: $geometriaH;
         color: $headColor;
+        text-align: left;
 
         &--plus:before {
             content: '+';
@@ -247,12 +405,32 @@ $headColor: #f58466;
             content: "-";
             margin-left: -1.5rem;
         }
+
+        &--grey {
+            color: #D4D5D6;
+            font-size: 9rem;
+            text-align: center;
+            font-family: $geometriaH;
+        }
+
+        &--big {
+            font-size: 10rem;
+            font-family: $geometriaH;
+            color: $headColor;
+        }
     }
 
     &__summary {
         font-size: 0.75rem;
         line-height: 1.5;
         color: #000;
+
+        &--grey {
+            font-size: 0.75rem;
+            text-align: center;
+            font-family: $geometriaB;
+            border-top: 1px solid;
+        }
     }
 
     &__main {
@@ -271,11 +449,15 @@ $headColor: #f58466;
     .main-report {
         flex-direction: column;
 
+        &__num {
+            text-align: center;
+        }
+
         &__side {
-	        width: auto;
-	        text-align: center;
-	        margin-right: 0;
-	        margin-bottom: 2rem; 
+            width: auto;
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 2rem;
             padding-left: 0;
         }
 

@@ -54,7 +54,7 @@ $(document).ready(function () {
         sectionsColor: '#fff',
         paddingTop: null,
         paddingBottom: null,
-        fixedElements: '.sc-header, .sc-foot',
+        fixedElements: '.sc-header, .sc-foot, .tab ',
         responsiveWidth: 0,
         responsiveHeight: 0,
         responsiveSlides: false,
@@ -86,9 +86,10 @@ $(document).ready(function () {
         },
 
         afterLoad: function (anchorLink, index) {
-            console.log(anchorLink);
+            indicate.init()
 			if(animations.allowAnim){
-				animations.isAnimEnded = false;
+                animations.isAnimEnded = false;
+                animations.anchorLink = anchorLink;
                 var flag = document.querySelectorAll('.section');
                     Array.prototype.contains = function (anchorLink) {
                         for (i in this) {
@@ -104,6 +105,7 @@ $(document).ready(function () {
                 if(index === 1){
                     $.fn.fullpage.setAllowScrolling(true, 'all')
                 }
+                return;
 			}
         },
 
@@ -119,13 +121,32 @@ $(document).ready(function () {
 	});
 	
 	$(document).on('click', '.sc-header__menu-btn', function(){
-        if(!navigations.toggleOn || navigations.toggleOn === undefined){
-            animations.allowAnim = false;
-            $.fn.fullpage.moveTo(2);
-            animations.callTweenOnEnter(2);
-            return animations.allowAnim = true;
-        }else{
+        
+        if(document.URL.split('#')[1] != 'menuPage'){
+        
+            Array.prototype.contains = function (anchorLink) {
+            for (i in this) {
+            if (animations.disableMenu[i] == anchorLink) return true;
+            }
             return false;
+        }
+
+        animations.disableMenu.contains(animations.anchorLink)?disabled():returntop();
+            
+        function returntop(){
+                if(!navigations.toggleOn || navigations.toggleOn === undefined &&  !(animations.disableMenu.contains(animations.anchorLink))){
+                    animations.allowAnim = false;
+                    $.fn.fullpage.moveTo(2);
+                    animations.callTweenOnEnter(2);
+                    return animations.allowAnim = true;
+                }else{
+                    return false;
+                }
+            }
+
+            function disabled(){
+                return false;
+            }
         }
     });
     

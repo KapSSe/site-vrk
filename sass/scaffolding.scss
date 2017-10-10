@@ -17,31 +17,104 @@ p {
 @font-face{
   font-family: "Geometria";
   src: url("../fonts/Geometria.otf");
+  src: local('☺'),
+  url("../fonts/Geometria.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Geometria.woff") format("woff"),
+  url("../fonts/Geometria.ttf") format("truetype"),
+  url("../fonts/Geometria.svg") format("svg");
+
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face {
+// @font-face {
+//   font-family: "Geometria Bold";
+//   src: url("../fonts/Geometria-Bold.otf");
+// }
+
+@font-face{
   font-family: "Geometria Bold";
   src: url("../fonts/Geometria-Bold.otf");
+  src: local('☺'),
+  url("../fonts/Geometria-Bold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Geometria-Bold.woff") format("woff"),
+  url("../fonts/Geometria-Bold.ttf") format("truetype"),
+  url("../fonts/Geometria-Bold.svg") format("svg");
+
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face {
-  font-family:"Geometria Heavy" ;
+// @font-face {
+//   font-family:"Geometria Heavy" ;
+//   src: url("../fonts/Geometria-Heavy.otf");
+// }
+
+@font-face{
+  font-family: "Geometria Heavy";
   src: url("../fonts/Geometria-Heavy.otf");
+  src: local('☺'),
+  url("../fonts/Geometria-Heavy.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Geometria-Heavy.woff") format("woff"),
+  url("../fonts/Geometria-Heavy.ttf") format("truetype"),
+  url("../fonts/Geometria-Heavy.svg") format("svg");
+
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face {
-  font-family:"Geometria Bold Italic" ;
+// @font-face {
+//   font-family:"Geometria Bold Italic" ;
+//   src: url("../fonts/Geometria-BoldItalic.otf");
+// }
+
+@font-face{
+  font-family: "Geometria Bold Italic";
   src: url("../fonts/Geometria-BoldItalic.otf");
+  src: local('☺'),
+  url("../fonts/Geometria-BoldItalic.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Geometria-BoldItalic.woff") format("woff"),
+  url("../fonts/Geometria-BoldItalic.ttf") format("truetype"),
+  url("../fonts/Geometria-BoldItalic.svg") format("svg");
+
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face {
-  font-family:"Geometria Exta Black" ;
+// @font-face {
+//   font-family:"Geometria Exta Black" ;
+//   src: url("../fonts/Geometria-ExtaBlack.otf");
+// }
+
+@font-face{
+  font-family: "Geometria Exta Black";
   src: url("../fonts/Geometria-ExtaBlack.otf");
+  src: local('☺'),
+  url("../fonts/Geometria-ExtaBlack.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Geometria-ExtaBlack.woff") format("woff"),
+  url("../fonts/Geometria-ExtaBlack.ttf") format("truetype"),
+  url("../fonts/Geometria-ExtaBlack.svg") format("svg");
+
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face {
-  font-family:"Geometria Italic" ;
+// @font-face {
+//   font-family:"Geometria Italic" ;
+//   src: url("../fonts/Geometria-Italic.otf");
+// }
+
+@font-face{
+  font-family: "Geometria Italic";
   src: url("../fonts/Geometria-Italic.otf");
+  src: local('☺'),
+  url("../fonts/Geometria-Italic.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Geometria-Italic.woff") format("woff"),
+  url("../fonts/Geometria-Italic.ttf") format("truetype"),
+  url("../fonts/Geometria-Italic.svg") format("svg");
+
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -49,9 +122,35 @@ p {
   src: url("../fonts/Geometria-Medium.otf");
 }
 
-@font-face {
-    font-family: "PTSans";
-    src: url("../fonts/pt-sans.ttf");
+@font-face{
+  font-family: "Geometria Medium";
+  src: url("../fonts/Geometria-Medium.otf");
+  src: local('☺'),
+  url("../fonts/Geometria-Medium.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Geometria-Medium.woff") format("woff"),
+  url("../fonts/Geometria-Medium.ttf") format("truetype"),
+  url("../fonts/Geometria-Medium.svg") format("svg");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @font-face {
+//     font-family: "PTSans";
+//     src: url("../fonts/pt-sans.ttf");
+// }
+
+@font-face{
+  font-family: "PTSans";
+  src: url("../fonts/pt-sans.otf");
+  src: local('☺'),
+  url("../fonts/pt-sans.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/pt-sans.woff") format("woff"),
+  url("../fonts/pt-sans.ttf") format("truetype"),
+  url("../fonts/pt-sans.svg") format("svg");
+
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Font-variables */
